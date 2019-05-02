@@ -12,12 +12,13 @@ locale-gen en_GB.UTF-8
 update-locale en_GB.UTF-8
 
 dpkg-reconfigure locales
-nodejs /c9sdk/server.js -l 0.0.0.0 -a name:passwd -w /root
 localedef -f UTF-8 -i en_US en_US.UTF-8
 
 if [ ! -d c9sdk ]; then
-   git clone https://github.com/c9/core.git c9sdk
+   git clone https://github.com/c9/core.git /var/lib/c9sdk
 fi
-cd c9sdk
+cd /var/lib/c9sdk
 bash scripts/install-sdk.sh
+
+#nodejs /c9sdk/server.js -l 0.0.0.0 -a name:passwd -w /root
 EOF
