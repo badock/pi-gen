@@ -41,7 +41,7 @@ USERNAME="pi"
 PASSWORD="raspberry"
 
 
-jupyter-notebook --port 8181 --notebook-dir=/workspace --allow-root --ip="0.0.0.0" --NotebookApp.token="\$USERNAME" --NotebookApp.password="\$PASSWORD"
+jupyter-notebook --port 8181 --notebook-dir=/workspace --allow-root --ip="0.0.0.0"  --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.allow_origin='*'
 
 # nodejs /var/lib/c9sdk/server.js -l 0.0.0.0 \
 #     --listen 0.0.0.0 \
