@@ -56,4 +56,7 @@ systemctl daemon-reload
 systemctl start jupyter
 systemctl enable jupyter
 
+# Enable SSH
+touch /boot/ssh
+
 EOF
