@@ -58,4 +58,7 @@ systemctl enable c9
 apt install -y python-dev python-pip
 pip install ikpdb
 
+# Enable SSH
+touch /boot/ssh
+
 EOF
